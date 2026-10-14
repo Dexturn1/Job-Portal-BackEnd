@@ -1,0 +1,9 @@
+2026-09-07 05:56:10.070903+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found (this database is empty); SQL statement:
+select c1_0.id,c1_0.created_at,c1_0.created_by,c1_0.description,c1_0.employees,c1_0.founded,c1_0.industry,c1_0.locations,c1_0.logo,c1_0.name,c1_0.rating,c1_0.size,c1_0.updated_at,c1_0.updated_by,c1_0.website from companies c1_0 [42104-240]
+2026-09-07 05:56:11.636191+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found (this database is empty); SQL statement:
+select c1_0.id,c1_0.created_at,c1_0.created_by,c1_0.description,c1_0.employees,c1_0.founded,c1_0.industry,c1_0.locations,c1_0.logo,c1_0.name,c1_0.rating,c1_0.size,c1_0.updated_at,c1_0.updated_by,c1_0.website from companies c1_0 [42104-240]
+2026-09-07 05:58:43.525310+05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMPANIES" not found (this database is empty); SQL statement:
+select c1_0.id,c1_0.created_at,c1_0.created_by,c1_0.description,c1_0.employees,c1_0.founded,c1_0.industry,c1_0.locations,c1_0.logo,c1_0.name,c1_0.rating,c1_0.size,c1_0.updated_at,c1_0.updated_by,c1_0.website from companies c1_0 [42104-240]
