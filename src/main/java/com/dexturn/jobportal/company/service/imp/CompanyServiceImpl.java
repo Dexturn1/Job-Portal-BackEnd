@@ -9,6 +9,7 @@ import com.dexturn.jobportal.entity.Job;
 import com.dexturn.jobportal.repository.CompanyRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,6 +22,7 @@ import java.util.stream.Collectors;
 public class CompanyServiceImpl implements CompanyService {
 
     private final CompanyRepository companyRepository;
+
 
     @Override
     public List<CompanyDTO> getAllCompanies() {
@@ -51,6 +53,7 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
 
+    @Cacheable("companies")
     @Override
     public List<CompanyDTO> getAllCompaniesForAdmin() {
         List<Company> companyList = companyRepository.findAll();

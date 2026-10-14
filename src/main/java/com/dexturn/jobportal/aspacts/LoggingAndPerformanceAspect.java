@@ -26,15 +26,15 @@ public class LoggingAndPerformanceAspect {
         String methodName = joinPoint.getSignature().toShortString();
         Object[] methodArgs = joinPoint.getArgs();
 
-        log.debug("➡️Entering method:{}", methodName);
-        log.debug("➡️Arguments:{}", Arrays.toString(methodArgs));
+        log.info("➡️Entering method:{}", methodName);
+        log.info("➡️Arguments:{}", Arrays.toString(methodArgs));
 
         // Proceed with actual business method;
         Object result = joinPoint.proceed();
         long executionTime = System.currentTimeMillis()-startTime;
 
-        log.debug("✅Method executed successfully:{}", methodName);
-        log.debug("⏱️Execution time:{} ms", executionTime);
+        log.info("✅Method executed successfully:{}", methodName);
+        log.info("⏱️Execution time:{} ms", executionTime);
 
         return result;
     }
