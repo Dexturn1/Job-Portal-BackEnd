@@ -2192,3 +2192,365 @@ Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Da
 2026-10-15 01:21:54.177 INFO  [http-nio-8080-exec-4] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
 2026-10-15 01:21:54.177 INFO  [http-nio-8080-exec-4] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
 2026-10-15 01:21:54.177 INFO  [http-nio-8080-exec-4] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-15 01:24:18.139 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompanies()
+2026-10-15 01:24:18.139 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 01:24:18.151 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompanies()
+2026-10-15 01:24:18.152 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 01:24:18.155 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 01:24:18.155 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[ACTIVE]
+2026-10-15 01:24:18.267 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 01:24:18.267 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:112 ms
+2026-10-15 01:24:18.268 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompanies()
+2026-10-15 01:24:18.268 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:117 ms
+2026-10-15 01:24:18.270 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompanies()
+2026-10-15 01:24:18.270 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:132 ms
+2026-10-15 01:24:18.275 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompanies()
+2026-10-15 01:24:18.275 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 01:24:18.278 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompanies()
+2026-10-15 01:24:18.278 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 01:24:18.278 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 01:24:18.278 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[ACTIVE]
+2026-10-15 01:24:18.345 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 01:24:18.345 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:67 ms
+2026-10-15 01:24:18.345 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompanies()
+2026-10-15 01:24:18.345 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:67 ms
+2026-10-15 01:24:18.348 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompanies()
+2026-10-15 01:24:18.348 INFO  [http-nio-8080-exec-8] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:73 ms
+2026-10-15 04:04:44.392 INFO  [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-15 04:04:44.405 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-15 04:04:44.412 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15 04:04:44.422 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-15 04:04:44.430 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-10-15 04:04:49.218 INFO  [restartedMain] c.d.jobportal.JobportalApplication - Starting JobportalApplication using Java 26.0.2.1 with PID 98847 (/Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal/target/classes started by prabhatkapkoti in /Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal)
+2026-10-15 04:04:49.218 INFO  [restartedMain] c.d.jobportal.JobportalApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-15 04:04:49.241 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-10-15 04:04:49.241 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-10-15 04:04:49.247 INFO  [restartedMain] o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file /Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal/compose.yaml
+2026-10-15 04:04:49.374 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-10-15 04:04:49.625 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container jobportaldb  Starting
+2026-10-15 04:04:49.794 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container jobportaldb  Started
+2026-10-15 04:04:49.794 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container jobportaldb  Waiting
+2026-10-15 04:04:50.297 INFO  [OutputReader-stderr] o.s.b.docker.compose.core.DockerCli -  Container jobportaldb  Healthy
+2026-10-15 04:04:51.787 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-15 04:04:51.805 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 4 JPA repository interfaces.
+2026-10-15 04:04:52.051 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-15 04:04:52.057 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-15 04:04:52.058 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-15 04:04:52.058 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-15 04:04:52.069 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 629 ms
+2026-10-15 04:04:52.141 INFO  [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-15 04:04:52.164 INFO  [restartedMain] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-15 04:04:52.289 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-15 04:04:52.302 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-15 04:04:52.448 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@458f65a2
+2026-10-15 04:04:52.448 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-15 04:04:52.491 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3307/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-15 04:04:52.879 INFO  [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-15 04:04:53.077 WARN  [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table jobs 
+       modify column benefits tinytext" via JDBC [Data truncation: Data too long for column 'benefits' at row 48]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table jobs 
+       modify column benefits tinytext" via JDBC [Data truncation: Data too long for column 'benefits' at row 48]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:324)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.dexturn.jobportal.JobportalApplication.main(JobportalApplication.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'benefits' at row 48
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 41 common frames omitted
+2026-10-15 04:04:53.084 WARN  [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table jobs 
+       modify column description tinytext not null" via JDBC [Data truncation: Data too long for column 'description' at row 132]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table jobs 
+       modify column description tinytext not null" via JDBC [Data truncation: Data too long for column 'description' at row 132]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:324)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.dexturn.jobportal.JobportalApplication.main(JobportalApplication.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 132
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 41 common frames omitted
+2026-10-15 04:04:53.098 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-15 04:04:53.170 INFO  [restartedMain] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-15 04:04:53.249 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.publicPaths()
+2026-10-15 04:04:53.249 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:04:53.250 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.publicPaths()
+2026-10-15 04:04:53.250 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:04:53.252 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.securedPaths()
+2026-10-15 04:04:53.253 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:04:53.253 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.securedPaths()
+2026-10-15 04:04:53.253 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:04:53.254 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.adminPaths()
+2026-10-15 04:04:53.254 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:04:53.254 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.adminPaths()
+2026-10-15 04:04:53.254 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-15 04:04:53.257 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.compromisedPasswordChecker()
+2026-10-15 04:04:53.257 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:04:53.312 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.compromisedPasswordChecker()
+2026-10-15 04:04:53.312 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:55 ms
+2026-10-15 04:04:53.335 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.passwordEncoder()
+2026-10-15 04:04:53.335 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:04:53.336 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.passwordEncoder()
+2026-10-15 04:04:53.336 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:04:53.339 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.authenticationManager(..)
+2026-10-15 04:04:53.339 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[com.dexturn.jobportal.security.JobPortalUsernamePwdAuthenticationProvider@36891a91]
+2026-10-15 04:04:53.341 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.authenticationManager(..)
+2026-10-15 04:04:53.341 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:04:53.528 WARN  [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-15 04:04:53.580 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalUsernamePwdAuthenticationProvider
+2026-10-15 04:04:53.587 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configurePathMatch(..)
+2026-10-15 04:04:53.587 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.PathMatchConfigurer@46bbfd26]
+2026-10-15 04:04:53.587 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configurePathMatch(..)
+2026-10-15 04:04:53.587 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-15 04:04:53.616 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.customSecurityFilterChain(..)
+2026-10-15 04:04:53.616 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.security.config.annotation.web.builders.HttpSecurity@70968ba9]
+2026-10-15 04:04:53.617 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.corsConfigurationSource()
+2026-10-15 04:04:53.617 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:04:53.618 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.corsConfigurationSource()
+2026-10-15 04:04:53.618 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:04:53.641 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.customSecurityFilterChain(..)
+2026-10-15 04:04:53.641 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:25 ms
+2026-10-15 04:04:53.707 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configureApiVersioning(..)
+2026-10-15 04:04:53.707 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.ApiVersionConfigurer@499c1b9]
+2026-10-15 04:04:53.708 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configureApiVersioning(..)
+2026-10-15 04:04:53.708 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:04:53.880 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-15 04:04:53.884 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-15 04:04:53.887 INFO  [restartedMain] c.d.jobportal.JobportalApplication - Started JobportalApplication in 4.813 seconds (process running for 5.105)
+2026-10-15 04:04:53.888 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-15 04:04:53.888 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-15 04:06:30.193 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-15 04:06:30.197 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-15 04:06:30.201 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-10-15 04:06:30.237 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompanies()
+2026-10-15 04:06:30.237 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:30.250 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:06:30.251 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:30.251 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:06:30.251 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[ACTIVE]
+2026-10-15 04:06:30.612 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:06:30.612 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:361 ms
+2026-10-15 04:06:30.615 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:06:30.615 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:365 ms
+2026-10-15 04:06:30.620 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompanies()
+2026-10-15 04:06:30.620 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:383 ms
+2026-10-15 04:06:30.658 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompanies()
+2026-10-15 04:06:30.658 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:30.661 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:06:30.661 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:30.662 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:06:30.662 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[ACTIVE]
+2026-10-15 04:06:30.708 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:06:30.708 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:46 ms
+2026-10-15 04:06:30.708 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:06:30.708 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:47 ms
+2026-10-15 04:06:30.711 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompanies()
+2026-10-15 04:06:30.711 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:53 ms
+2026-10-15 04:06:54.775 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:AuthController.apiLogin(..)
+2026-10-15 04:06:54.777 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[LoginRequestDto[username=admin@gmail.com, password=EazyBytes@1803]]
+2026-10-15 04:06:54.780 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalUsernamePwdAuthenticationProvider.supports(..)
+2026-10-15 04:06:54.781 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[class org.springframework.security.authentication.UsernamePasswordAuthenticationToken]
+2026-10-15 04:06:54.781 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalUsernamePwdAuthenticationProvider.supports(..)
+2026-10-15 04:06:54.781 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:06:54.781 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalUsernamePwdAuthenticationProvider.authenticate(..)
+2026-10-15 04:06:54.781 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[UsernamePasswordAuthenticationToken [Principal=admin@gmail.com, Credentials=[PROTECTED], Authenticated=false, Details=null, Granted Authorities=[]]]
+2026-10-15 04:06:54.784 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalUserRepository.findJobPortalUserByEmail(..)
+2026-10-15 04:06:54.784 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[admin@gmail.com]
+2026-10-15 04:06:54.875 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalUserRepository.findJobPortalUserByEmail(..)
+2026-10-15 04:06:54.876 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:91 ms
+2026-10-15 04:06:54.943 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalUsernamePwdAuthenticationProvider.authenticate(..)
+2026-10-15 04:06:54.944 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:162 ms
+2026-10-15 04:06:54.944 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JwtUtil.generateJwtToken(..)
+2026-10-15 04:06:54.944 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[UsernamePasswordAuthenticationToken [Principal=com.dexturn.jobportal.entity.JobPortalUser@4ae46720, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2026-10-15 04:06:54.977 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JwtUtil.generateJwtToken(..)
+2026-10-15 04:06:54.977 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:33 ms
+2026-10-15 04:06:54.978 INFO  [http-nio-8080-exec-6] c.d.j.a.LoginSuccessAuditAspect - ✅ LOGIN SUCCESS | User: admin@gmail.com | Role: ROLE_ADMIN
+2026-10-15 04:06:54.978 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:AuthController.apiLogin(..)
+2026-10-15 04:06:54.978 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:203 ms
+2026-10-15 04:06:55.053 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:06:55.053 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:55.057 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompaniesForAdmin()
+2026-10-15 04:06:55.057 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:55.058 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:ListCrudRepository.findAll()
+2026-10-15 04:06:55.058 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:55.070 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:ListCrudRepository.findAll()
+2026-10-15 04:06:55.070 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:13 ms
+2026-10-15 04:06:55.070 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompaniesForAdmin()
+2026-10-15 04:06:55.070 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:13 ms
+2026-10-15 04:06:55.074 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:06:55.074 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:21 ms
+2026-10-15 04:06:55.076 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:06:55.076 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:06:55.077 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:06:55.077 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:07:39.597 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:07:39.598 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:07:39.598 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:07:39.599 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:2 ms
+2026-10-15 04:07:39.610 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:07:39.610 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:07:39.610 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:07:39.610 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-15 04:08:11.698 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.updateCompanyDetails(..)
+2026-10-15 04:08:11.701 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[1, CompanyDTO[id=1, name=TechCorp Inc., logo=/logos/techcorp.png, industry=Technology, size=Large, rating=4.4, locations=San Francisco,New York,Austin, founded=2010, description=TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees., employees=15000, website=https://www.techcorpinc.com, createdAt=null, jobs=null]]
+2026-10-15 04:08:11.710 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.updateCompanyDetails(..)
+2026-10-15 04:08:11.710 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[1, CompanyDTO[id=1, name=TechCorp Inc., logo=/logos/techcorp.png, industry=Technology, size=Large, rating=4.4, locations=San Francisco,New York,Austin, founded=2010, description=TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees., employees=15000, website=https://www.techcorpinc.com, createdAt=null, jobs=null]]
+2026-10-15 04:08:11.711 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyRepository.updateCompanyDetails(..)
+2026-10-15 04:08:11.711 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[1, TechCorp Inc., /logos/techcorp.png, Technology, Large, 4.4, San Francisco,New York,Austin, 2010, TechCorp Inc. is a leading technology company founded in 2010. We're committed to innovation and creating exceptional experiences for our customers and employees., 15000, https://www.techcorpinc.com]
+2026-10-15 04:08:11.797 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyRepository.updateCompanyDetails(..)
+2026-10-15 04:08:11.797 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:86 ms
+2026-10-15 04:08:11.797 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.updateCompanyDetails(..)
+2026-10-15 04:08:11.797 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:87 ms
+2026-10-15 04:08:11.801 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.updateCompanyDetails(..)
+2026-10-15 04:08:11.801 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:103 ms
+2026-10-15 04:08:11.812 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:08:11.812 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:08:11.815 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompaniesForAdmin()
+2026-10-15 04:08:11.815 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:08:11.815 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:ListCrudRepository.findAll()
+2026-10-15 04:08:11.815 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:08:11.820 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:ListCrudRepository.findAll()
+2026-10-15 04:08:11.820 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:5 ms
+2026-10-15 04:08:11.820 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompaniesForAdmin()
+2026-10-15 04:08:11.820 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:5 ms
+2026-10-15 04:08:11.822 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:08:11.822 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:10 ms
+2026-10-15 04:08:55.240 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:08:55.241 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:08:55.241 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:08:55.241 INFO  [http-nio-8080-exec-9] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:08:55.255 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:08:55.256 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:08:55.256 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:08:55.256 INFO  [http-nio-8080-exec-10] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-15 04:09:05.336 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:09:05.337 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:09:05.338 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:09:05.338 INFO  [http-nio-8080-exec-1] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:2 ms
+2026-10-15 04:09:05.346 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:09:05.346 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:09:05.346 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompaniesForAdmin()
+2026-10-15 04:09:05.346 INFO  [http-nio-8080-exec-2] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-15 04:17:10.840 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompanies()
+2026-10-15 04:17:10.841 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:17:10.847 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:17:10.847 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:17:10.848 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:17:10.848 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[ACTIVE]
+2026-10-15 04:17:10.912 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:17:10.913 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:64 ms
+2026-10-15 04:17:10.913 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:17:10.913 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:66 ms
+2026-10-15 04:17:10.915 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompanies()
+2026-10-15 04:17:10.916 INFO  [http-nio-8080-exec-6] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:75 ms
+2026-10-15 04:17:10.919 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyController.getAllCompanies()
+2026-10-15 04:17:10.919 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:17:10.921 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:17:10.922 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-15 04:17:10.922 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:17:10.922 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[ACTIVE]
+2026-10-15 04:17:10.959 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyRepository.fetchCompaniesWithJobsByStatus(..)
+2026-10-15 04:17:10.960 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:37 ms
+2026-10-15 04:17:10.960 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyServiceImpl.getAllCompanies()
+2026-10-15 04:17:10.960 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:39 ms
+2026-10-15 04:17:10.961 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CompanyController.getAllCompanies()
+2026-10-15 04:17:10.961 INFO  [http-nio-8080-exec-7] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:42 ms
