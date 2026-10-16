@@ -42,6 +42,10 @@ public class  JobPortalSecurityConfig {
     @Qualifier("adminPaths")
     private final List<String> adminPaths;
 
+
+    @Qualifier("employerPaths")
+    private final List<String > employerPaths;
+
     @Bean
     SecurityFilterChain customSecurityFilterChain(HttpSecurity http) {
         return http.csrf(csrfConfig -> csrfConfig
@@ -51,6 +55,7 @@ public class  JobPortalSecurityConfig {
                 .authorizeHttpRequests(requests -> {
                     publicPaths.forEach(path -> requests.requestMatchers(path).permitAll());
                     adminPaths.forEach(path-> requests.requestMatchers(path).hasRole("ADMIN"));
+                    adminPaths.forEach(path->requests.requestMatchers(path).hasRole("EMPLOYER"));
                     securedPaths.forEach(path -> requests.requestMatchers(path).authenticated());
                     requests.anyRequest().denyAll();
                 })

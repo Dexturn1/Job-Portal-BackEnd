@@ -50,4 +50,12 @@ public class PathsConfig {
         );
     }
 
+    @Bean(name = "employerPaths")
+    public List<String> employerPaths(){
+        return List.of(
+                "/api/jobs/employer",
+                "/api/jobs/${JobId}/status/employer"
+        );
+    }
+
 }
