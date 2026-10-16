@@ -55,8 +55,8 @@ public class JobPortalUser extends BaseEntity {
 
     @ManyToMany
     @JoinTable(name = "saved_jobs",
-            joinColumns = {@JoinColumn(name = "user_id")},
-            inverseJoinColumns = {@JoinColumn(name = "job_id")})
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "job_id"))
     private Set<Job> savedJobs = new LinkedHashSet<>();
 
 

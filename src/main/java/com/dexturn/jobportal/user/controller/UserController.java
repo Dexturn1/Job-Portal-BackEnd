@@ -3,9 +3,11 @@ package com.dexturn.jobportal.user.controller;
 
 import com.dexturn.jobportal.dto.ProfileDto;
 import com.dexturn.jobportal.dto.UserDto;
+import com.dexturn.jobportal.repository.CompanyRepository;
 import com.dexturn.jobportal.user.service.IUserService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +24,7 @@ import java.util.Optional;
 public class UserController {
 
     private final IUserService userService;
+    private final CompanyRepository companyRepository;
 
     @GetMapping("/search/admin")
     public ResponseEntity<?> searchUserByEmail(@RequestParam String email){
@@ -70,6 +73,45 @@ public class UserController {
     }
 
 
+    @GetMapping(value = "/profile/picture/jobseeker", version = "1.0")
+    public ResponseEntity<byte[]> getProfilePicture(Authentication authentication){
+
+        String userEmail = authentication.getName();
+        ProfileDto profileDto = userService.getProfilePicture(userEmail);
+
+        byte[]picture = profileDto.profilePicture();
+
+        if(picture ==  null || picture.length == 0){
+            return ResponseEntity.notFound().build();
+        }
+
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setContentType(MediaType.parseMediaType(profileDto.profilePictureType()));
+        httpHeaders.setContentLength(picture.length);
+        return new ResponseEntity<>(picture, httpHeaders, HttpStatus.OK);
+
+    }
+
+
+    @GetMapping(value = "/profile/resume/jobseeker", version = "1.0")
+    public ResponseEntity<byte[]> getResume(Authentication authentication){
+
+        String userEmail = authentication.getName();
+        ProfileDto profileDto = userService.getResume(userEmail);
+
+        byte[]resume = profileDto.resume();
+
+        if(resume == null || resume.length == 0){
+            return ResponseEntity.notFound().build();
+        }
+
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setContentType(MediaType.parseMediaType(profileDto.resumeType()));
+        httpHeaders.setContentLength(resume.length);
+        httpHeaders.setContentDispositionFormData("attachment", profileDto.resumeName());
+        return new ResponseEntity<>(resume, httpHeaders, HttpStatus.OK);
+
+    }
 
 
 

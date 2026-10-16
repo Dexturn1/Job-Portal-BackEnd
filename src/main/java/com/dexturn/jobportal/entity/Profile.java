@@ -1,6 +1,5 @@
 package com.dexturn.jobportal.entity;
 
-
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -12,6 +11,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "profiles")
 public class Profile extends BaseEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -46,7 +46,8 @@ public class Profile extends BaseEntity {
     @Column(name = "portfolio_website", length = 500)
     private String portfolioWebsite;
 
-    @Column(name = "profile_picture")
+    @Lob
+    @Column(name = "profile_picture", columnDefinition = "LONGBLOB")
     private byte[] profilePicture;
 
     @Size(max = 255)
@@ -57,7 +58,8 @@ public class Profile extends BaseEntity {
     @Column(name = "profile_picture_type", length = 100)
     private String profilePictureType;
 
-    @Column(name = "resume")
+    @Lob
+    @Column(name = "resume", columnDefinition = "LONGBLOB")
     private byte[] resume;
 
     @Size(max = 255)
@@ -67,6 +69,4 @@ public class Profile extends BaseEntity {
     @Size(max = 100)
     @Column(name = "resume_type", length = 100)
     private String resumeType;
-
-
 }

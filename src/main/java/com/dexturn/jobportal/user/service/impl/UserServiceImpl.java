@@ -127,6 +127,33 @@ public class UserServiceImpl implements IUserService {
 
     }
 
+    @Override
+    public ProfileDto getProfilePicture(String userEmail) {
+
+        JobPortalUser user = userRepository.findJobPortalUserByEmail(userEmail)
+                .orElseThrow(()-> new RuntimeException("User not found with email:"+ userEmail));
+
+        if(user.getProfile() == null){
+            return null;
+        }
+
+        return mapToProfileDto(user.getProfile(), true);
+
+    }
+
+    @Override
+    public ProfileDto getResume(String userEmail) {
+        JobPortalUser user = userRepository.findJobPortalUserByEmail(userEmail)
+                .orElseThrow(()-> new RuntimeException("User not found with email:"+ userEmail));
+
+        if(user.getProfile() == null){
+            return null;
+        }
+
+        return mapToProfileDto(user.getProfile(), true);
+
+    }
+
 
     private Profile mapToProfile(Profile profile, ProfileDto profileDto,
                                  MultipartFile profilePicture, MultipartFile resume) {
