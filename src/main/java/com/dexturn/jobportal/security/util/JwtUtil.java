@@ -23,9 +23,12 @@ public class JwtUtil {
 
     public String generateJwtToken(Authentication authentication){
         String jwtToken;
+
         String secret = env.getProperty(ApplicationConstants.JWT_SECRET_KEY,
                 ApplicationConstants.JWT_SECRET_DEFAULT_VALUE);
+
         SecretKey secretKey = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
+
         var fetchedUser = (JobPortalUser) authentication.getPrincipal();
         jwtToken = Jwts.builder().issuer("Job Portal").subject("JWT Token")
                 .claim("name", fetchedUser.getName())

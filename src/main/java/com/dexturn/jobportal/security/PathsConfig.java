@@ -24,7 +24,6 @@ public class PathsConfig {
                 "/swagger-resources/**",
                 "/swagger-ui.html",
                 "/webjars/**"
-
         );
     }
 
@@ -32,6 +31,27 @@ public class PathsConfig {
     public List<String> securedPaths() {
         return List.of(
                 "/api/**"
+        );
+    }
+
+    @Bean(name = "jobseekerPaths")
+    public List<String> jobseekerPaths() {
+        return List.of(
+                "/api/users/profile/jobseeker",
+                "/api/users/profile/picture/jobseeker",
+                "/api/users/profile/resume/jobseeker",
+                "/api/users/saved-jobs/${jobId}/jobseeker",
+                "/api/users/saved-jobs/jobseeker",
+                "/api/users/job-applications/jobseeker",
+                "/api/users/job-applications/${jobId}/jobseeker"
+        );
+    }
+
+    @Bean(name = "employerPaths")
+    public List<String> employerPaths() {
+        return List.of(
+                "/api/jobs/employer",
+                "/api/jobs/${jobId}/status/employer"
         );
     }
 
@@ -47,29 +67,6 @@ public class PathsConfig {
                 "/api/users/search/admin",
                 "/api/users/${userId}/role/employer/admin",
                 "/api/users/${userId}/role/employer/admin"
-        );
-    }
-
-    @Bean(name = "employerPaths")
-    public List<String> employerPaths(){
-        return List.of(
-                "/api/jobs/employer",
-                "/api/jobs/${JobId}/status/employer",
-                "/api/users/saved-jobs/${jobId}/jobseeker",
-                "/api/users/saved-jobs/jobseeker"
-        );
-    }
-
-    @Bean(name = "jobseekerPaths")
-    public List<String> jobseekerPaths() {
-        return List.of(
-                "/api/users/profile/jobseeker",
-                "/api/users/profile/picture/jobseeker",
-                "/api/users/profile/resume/jobseeker",
-                "/api/users/saved-jobs/${jobId}/jobseeker",
-                "/api/users/saved-jobs/jobseeker",
-                "/api/users/job-applications/jobseeker",
-                "/api/users/job-applications/${jobId}/jobseeker"
         );
     }
 
