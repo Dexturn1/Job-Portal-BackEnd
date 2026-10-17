@@ -32,4 +32,7 @@ public interface JobService {
      * @return created job
      */
     JobDto createJob(JobDto jobDto, String employerEmail);
+
+
+
 }

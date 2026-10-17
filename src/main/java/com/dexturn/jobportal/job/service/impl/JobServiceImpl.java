@@ -69,14 +69,13 @@ public class JobServiceImpl implements JobService {
         if(employer.getCompany() == null){
             throw new RuntimeException("Employer does not have a company assigned. Please contact admin.");
         }
-
         Job job = transformDtoToEntity(jobDto);
         job.setPostedDate(Instant.now());
         job.setApplicationsCount(0);
         job.setStatus("DRAFT");
         job.setCompany(employer.getCompany());
-
         Job savedjob = jobRepository.save(job);
+
         return ApplicationUtility.transformJobToDto(savedjob);
     }
 

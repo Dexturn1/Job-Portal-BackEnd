@@ -59,5 +59,8 @@ public class JobPortalUser extends BaseEntity {
             inverseJoinColumns = @JoinColumn(name = "job_id"))
     private Set<Job> savedJobs = new LinkedHashSet<>();
 
+    @OneToMany(mappedBy = "user")
+    private Set <JobApplication> jobApplications = new LinkedHashSet<>();
+
 
 }

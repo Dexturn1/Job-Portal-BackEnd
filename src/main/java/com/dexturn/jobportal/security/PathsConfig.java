@@ -54,7 +54,9 @@ public class PathsConfig {
     public List<String> employerPaths(){
         return List.of(
                 "/api/jobs/employer",
-                "/api/jobs/${JobId}/status/employer"
+                "/api/jobs/${JobId}/status/employer",
+                "/api/users/saved-jobs/${jobId}/jobseeker",
+                "/api/users/saved-jobs/jobseeker"
         );
     }
 
