@@ -1,10 +1,7 @@
 package com.dexturn.jobportal.user.controller;
 
 
-import com.dexturn.jobportal.constanst.ApplicationConstants;
 import com.dexturn.jobportal.dto.*;
-import com.dexturn.jobportal.entity.Job;
-import com.dexturn.jobportal.entity.JobApplication;
 import com.dexturn.jobportal.repository.CompanyRepository;
 import com.dexturn.jobportal.repository.JobPortalUserRepository;
 import com.dexturn.jobportal.user.service.IUserService;
@@ -121,68 +118,54 @@ public class UserController {
 
 
     @PostMapping(value = "/saved-jobs/{jobId}/jobseeker", version = "1.0")
-    public ResponseEntity<JobDto> saveJob(@PathVariable Long jobId, Authentication authentication){
-        String email = authentication.getName();
-
-        JobDto savedJob = userService.saveJob(email, jobId);
+    public ResponseEntity<JobDto> saveJob(@PathVariable Long jobId,
+                                          Authentication authentication) {
+        String userEmail = authentication.getName();
+        JobDto savedJob = userService.saveJob(userEmail, jobId);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedJob);
     }
 
     @DeleteMapping(value = "/saved-jobs/{jobId}/jobseeker", version = "1.0")
-    public ResponseEntity<String> unSaveJob(@PathVariable Long jobId, Authentication authentication){
+    public ResponseEntity<String> unsaveJob(@PathVariable Long jobId,
+                                            Authentication authentication) {
         String userEmail = authentication.getName();
-
         userService.unsaveJob(userEmail, jobId);
         return ResponseEntity.status(HttpStatus.OK).body("Job unsaved successfully");
-
     }
 
 
     @GetMapping(value = "/saved-jobs/jobseeker", version = "1.0")
-    public ResponseEntity<List<JobDto>> getSavedJob(Authentication authentication){
-        String email = authentication.getName();
-
-        List<JobDto> savedJobs = userService.getSavedJobs(email);
-
-        return ResponseEntity.ok(savedJobs);
-
+    public ResponseEntity<List<JobDto>> getSavedJobs(Authentication authentication) {
+        String userEmail = authentication.getName();
+        List<JobDto> savedJobDtos = userService.getSavedJobs(userEmail);
+        return ResponseEntity.ok(savedJobDtos);
     }
 
-    @PostMapping(value ="/job-applications/jobseeker", version = "1.0")
+    @PostMapping(value = "/job-applications/jobseeker", version = "1.0")
     public ResponseEntity<JobApplicationDto> applyForJob(
-            @RequestBody @Valid ApplyJobRequestDto applyJobRequestDto, Authentication authentication
-            ){
-
+            @RequestBody @Valid ApplyJobRequestDto applyJobRequestDto, Authentication authentication) {
         String userEmail = authentication.getName();
-        JobApplicationDto application =  userService.applyForJob(userEmail, applyJobRequestDto);
+        JobApplicationDto application = userService.applyForJob(userEmail, applyJobRequestDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(application);
     }
 
 
-    @DeleteMapping(value = "/job-application/{jobId}/jobseeker", version = "1.0")
-    public ResponseEntity<String> withdrawApplication(@PathVariable Long jobId, Authentication application){
-        String userEmail = application.getName();
+    @DeleteMapping(value = "/job-applications/{jobId}/jobseeker", version = "1.0")
+    public ResponseEntity<String> withdrawApplication(@PathVariable Long jobId,
+                                                      Authentication authentication) {
+        String userEmail = authentication.getName();
         userService.withdrawApplication(userEmail, jobId);
         return ResponseEntity.status(HttpStatus.OK).body("Application withdrawn successfully");
-
     }
 
-    @GetMapping(value = "/job-application/jobseeker", version = "1.0")
-    public ResponseEntity<List<JobApplicationDto>> getJobSeekerApplications(Authentication authentication){
 
+
+    @GetMapping(value = "/job-applications/jobseeker", version = "1.0")
+    public ResponseEntity<List<JobApplicationDto>> getJobSeekerApplications(Authentication authentication) {
         String userEmail = authentication.getName();
-
-        List<JobApplicationDto> jobApplicationDtos = userService.getJobSeekerApplications(userEmail);
-
-        return ResponseEntity.ok(jobApplicationDtos);
-
+        List<JobApplicationDto> applications = userService.getJobSeekerApplications(userEmail);
+        return ResponseEntity.ok(applications);
     }
-
-
-
-
-
-
 
 
 }

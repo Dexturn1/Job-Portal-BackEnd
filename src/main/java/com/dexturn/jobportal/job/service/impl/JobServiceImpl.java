@@ -1,9 +1,13 @@
 package com.dexturn.jobportal.job.service.impl;
 
+import com.dexturn.jobportal.dto.JobApplicationDto;
 import com.dexturn.jobportal.dto.JobDto;
+import com.dexturn.jobportal.dto.UpdateJobApplicationDto;
 import com.dexturn.jobportal.entity.Job;
+import com.dexturn.jobportal.entity.JobApplication;
 import com.dexturn.jobportal.entity.JobPortalUser;
 import com.dexturn.jobportal.job.service.JobService;
+import com.dexturn.jobportal.repository.JobApplicationRepository;
 import com.dexturn.jobportal.repository.JobPortalUserRepository;
 import com.dexturn.jobportal.repository.JobRepository;
 import com.dexturn.jobportal.util.ApplicationUtility;
@@ -14,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -22,6 +27,7 @@ public class JobServiceImpl implements JobService {
 
     private final JobRepository jobRepository;
     private final JobPortalUserRepository jobPortalUserRepository;
+    private final JobApplicationRepository jobApplicationRepository;
 
     @Override
     public List<JobDto> getEmployerJobs(String employerEmail) {
@@ -79,6 +85,21 @@ public class JobServiceImpl implements JobService {
         return ApplicationUtility.transformJobToDto(savedjob);
     }
 
+    @Override
+    public List<JobApplicationDto> getApplicationsByJobForEmployer(Long jobId) {
+        List<JobApplication> applications = jobApplicationRepository.findByJobIdOrderByAppliedAtAsc(jobId);
+        return applications.stream()
+                .map(ApplicationUtility::mapToJobApplicationDto)
+                .collect(Collectors.toList());
+    }
+
+    @Transactional
+    @Override
+    public boolean updateJobApplication(UpdateJobApplicationDto dto) {
+        int updatedRows = jobApplicationRepository.updateStatusAndNotesById(
+                dto.status().name(), dto.notes(),dto.applicationId(), ApplicationUtility.getLoggedInUser());
+        return updatedRows > 0;
+    }
 
     private Job transformDtoToEntity(JobDto jobDto){
         Job job = new Job();

@@ -1,7 +1,9 @@
 package com.dexturn.jobportal.job.controller;
 
 
+import com.dexturn.jobportal.dto.JobApplicationDto;
 import com.dexturn.jobportal.dto.JobDto;
+import com.dexturn.jobportal.dto.UpdateJobApplicationDto;
 import com.dexturn.jobportal.job.service.JobService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -52,6 +54,27 @@ public class JobController {
         }
         JobDto updatedJob = jobService.updateJobStatus(jobId, status.toUpperCase(), employerEmail);
         return ResponseEntity.ok(updatedJob);
+    }
+
+    @GetMapping("/applications/{jobId}/employer")
+    public ResponseEntity<List<JobApplicationDto>> getApplicationsByJobForEmployer(
+            @PathVariable Long jobId) {
+        List<JobApplicationDto> applications = jobService.getApplicationsByJobForEmployer(jobId);
+        return ResponseEntity.ok(applications);
+    }
+
+
+    @PatchMapping("/applications/employer")
+    public ResponseEntity<String> updateJobApplication(
+            @RequestBody @Valid UpdateJobApplicationDto updateJobApplicationDto){
+        boolean isUpdated = jobService.updateJobApplication(updateJobApplicationDto);
+
+        if(!isUpdated)
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Failed to update application");
+
+
+        return ResponseEntity.ok("Application updated successfully");
+
     }
 
 

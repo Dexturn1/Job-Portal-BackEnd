@@ -199,20 +199,16 @@ public class UserServiceImpl implements IUserService {
     @Transactional
     @Override
     public JobApplicationDto applyForJob(String userEmail, ApplyJobRequestDto applyJobRequestDto) {
-        // validate if user exists
+        // Validate if user exists
         JobPortalUser user = userRepository.findJobPortalUserByEmail(userEmail)
-                .orElseThrow(()-> new RuntimeException("User not found with email: "+ userEmail));
-
+                .orElseThrow(() -> new RuntimeException("User not found with email: " + userEmail));
         Long jobId = applyJobRequestDto.jobId();
-
-        if(jobApplicationRepository.existsByUserIdAndJobId(user.getId(), jobId)){
+        if (jobApplicationRepository.existsByUserIdAndJobId(user.getId(), jobId)) {
             throw new RuntimeException("You have already applied for this job");
         }
-
         // Validate job exists
         Job job = jobRepository.findById(jobId)
-                .orElseThrow(()-> new RuntimeException("Job not found with ID:"+ jobId));
-
+                .orElseThrow(() -> new RuntimeException("Job not found with ID: " + jobId));
         // Create job application
         JobApplication application = new JobApplication();
         application.setUser(user);
@@ -221,13 +217,10 @@ public class UserServiceImpl implements IUserService {
         application.setStatus(ApplicationConstants.PENDING);
         application.setCoverLetter(applyJobRequestDto.coverLetter());
         JobApplication saved = jobApplicationRepository.save(application);
-
-        //Increment application count
-        job.setApplicationsCount(job.getApplicationsCount()!= null ? job.getApplicationsCount()+1 : 1);
-        //jobRepository.save(job); - Optional
-
-        return mapToJobApplicationDto(saved);
-
+        // Increment applications count
+        job.setApplicationsCount(job.getApplicationsCount() != null ? job.getApplicationsCount() + 1 : 1);
+        // jobRepository.save(job); - Optional
+        return ApplicationUtility.mapToJobApplicationDto(saved);
     }
 
     @Transactional

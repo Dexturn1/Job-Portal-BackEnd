@@ -1,7 +1,9 @@
 package com.dexturn.jobportal.job.service;
 
 
+import com.dexturn.jobportal.dto.JobApplicationDto;
 import com.dexturn.jobportal.dto.JobDto;
+import com.dexturn.jobportal.dto.UpdateJobApplicationDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -34,5 +36,8 @@ public interface JobService {
     JobDto createJob(JobDto jobDto, String employerEmail);
 
 
+    List<JobApplicationDto> getApplicationsByJobForEmployer(Long id);
+
+    boolean updateJobApplication(UpdateJobApplicationDto updateJobApplicationDto);
 
 }

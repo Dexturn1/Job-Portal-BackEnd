@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <!-- ===================== -->
-    <!-- Environment-safe log path -->
-    <!-- ===================== -->
     <property name="LOGS" value="${LOG_PATH:-./logs}" />
 
-    <!-- ===================== -->
-    <!-- Console Appender -->
-    <!-- ===================== -->
+    <!-- Console -->
     <appender name="Console"
               class="ch.qos.logback.core.ConsoleAppender">
 
@@ -21,9 +16,7 @@
     </appender>
 
 
-    <!-- ===================== -->
-    <!-- Rolling File Appender -->
-    <!-- ===================== -->
+    <!-- Rolling File -->
     <appender name="RollingFile"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
 
@@ -35,7 +28,6 @@
             </pattern>
         </encoder>
 
-        <!-- Size + Time based rolling policy -->
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
 
             <fileNamePattern>
@@ -52,26 +44,68 @@
 
 
     <!-- ===================== -->
-    <!-- Root Logger -->
+    <!-- Production -->
     <!-- ===================== -->
-    <root level="INFO">
+    <springProfile name="prod">
+        <!-- ===================== -->
+        <!-- Root Logger -->
+        <!-- ===================== -->
+        <root level="ERROR">
+            <appender-ref ref="RollingFile"/>
+        </root>
+        <!-- ===================== -->
+        <!-- Application-specific ERROR logs -->
+        <!-- ===================== -->
+        <logger name="com.dexturn.jobportal"
+                level="ERROR"
+                additivity="false">
+            <appender-ref ref="RollingFile"/>
+        </logger>
+    </springProfile>
 
-        <appender-ref ref="RollingFile"/>
-        <appender-ref ref="Console"/>
-
-    </root>
 
 
     <!-- ===================== -->
-    <!-- Application-specific ERROR logs -->
+    <!-- QA -->
     <!-- ===================== -->
-    <logger name="com.dexturn.jobportal"
-            level="INFO"
-            additivity="false">
+    <springProfile name="qa">
+        <!-- ===================== -->
+        <!-- Root Logger -->
+        <!-- ===================== -->
+        <root level="INFO">
+            <appender-ref ref="RollingFile"/>
+        </root>
+        <!-- ===================== -->
+        <!-- Application-specific ERROR logs -->
+        <!-- ===================== -->
+        <logger name="com.dexturn.jobportal"
+                level="INFO"
+                additivity="false">
+            <appender-ref ref="RollingFile"/>
+        </logger>
+    </springProfile>
+    <!-- ===================== -->
+    <!-- Development -->
+    <!-- ===================== -->
 
-        <appender-ref ref="RollingFile"/>
-        <appender-ref ref="Console"/>
 
-    </logger>
+    <springProfile name="default">
+        <!-- ===================== -->
+        <!-- Root Logger -->
+        <!-- ===================== -->
+        <root level="INFO">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingFile"/>
+        </root>
+        <!-- ===================== -->
+        <!-- Application-specific ERROR logs -->
+        <!-- ===================== -->
+        <logger name="com.dexturn.jobportal"
+                level="INFO"
+                additivity="false">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingFile"/>
+        </logger>
+    </springProfile>
 
 </configuration>

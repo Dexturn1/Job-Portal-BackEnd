@@ -2,49 +2,34 @@ package com.dexturn.jobportal.util;
 
 
 import com.dexturn.jobportal.constanst.ApplicationConstants;
+import com.dexturn.jobportal.dto.JobApplicationDto;
 import com.dexturn.jobportal.dto.JobDto;
+import com.dexturn.jobportal.dto.ProfileDto;
 import com.dexturn.jobportal.entity.Job;
+import com.dexturn.jobportal.entity.JobApplication;
 import com.dexturn.jobportal.entity.JobPortalUser;
+import com.dexturn.jobportal.entity.Profile;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 public class ApplicationUtility {
+
     public static String getLoggedInUser() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
-        Authentication authentication =
-                SecurityContextHolder.getContext().getAuthentication();
-
-        System.out.println("Authentication: " + authentication);
-
-        if (authentication == null
-                || !authentication.isAuthenticated()
-                || "anonymousUser".equals(authentication.getPrincipal())) {
-
-            System.out.println("Returning SYSTEM: "
-                    + ApplicationConstants._SYSTEM_);
-
+        if (authentication == null || !authentication.isAuthenticated() ||
+                authentication.getPrincipal().equals("anonymousUser")) {
             return ApplicationConstants._SYSTEM_;
         }
-
         Object principal = authentication.getPrincipal();
-
-        System.out.println("Principal: " + principal);
-        System.out.println("Principal type: "
-                + principal.getClass().getName());
-
-
+        String username;
         if (principal instanceof JobPortalUser jobPortalUser) {
-
-            String email = jobPortalUser.getEmail();
-
-            System.out.println("Email: " + email);
-
-            return email;
+            username = jobPortalUser.getEmail();
+        } else {
+            username = principal.toString(); // fallback
         }
-
-        return principal.toString();
+        return username;
     }
-
 
     public static JobDto transformJobToDto(Job job) {
         return new JobDto(
@@ -73,7 +58,43 @@ public class ApplicationUtility {
                 job.getRemote(),
                 job.getStatus()
         );
-
     }
 
+    public static JobApplicationDto mapToJobApplicationDto(JobApplication application) {
+        // Map profile if exists
+        ProfileDto profileDto = null;
+        Profile profile = application.getUser().getProfile();
+        if (profile != null) {
+            profileDto = new ProfileDto(
+                    profile.getId(),
+                    profile.getUser().getId(),
+                    profile.getJobTitle(),
+                    profile.getLocation(),
+                    profile.getExperienceLevel(),
+                    profile.getProfessionalBio(),
+                    profile.getPortfolioWebsite(),
+                    profile.getProfilePicture(),
+                    profile.getProfilePictureName(),
+                    profile.getProfilePictureType(),
+                    profile.getResume(),
+                    profile.getResumeName(),
+                    profile.getResumeType(),
+                    profile.getCreatedAt(),
+                    profile.getUpdatedAt()
+            );
+        }
+        return new JobApplicationDto(
+                application.getId(),
+                application.getUser().getId(),
+                application.getUser().getName(),
+                application.getUser().getEmail(),
+                application.getUser().getMobileNumber(),
+                profileDto,
+                ApplicationUtility.transformJobToDto(application.getJob()),
+                application.getAppliedAt(),
+                application.getStatus(),
+                application.getCoverLetter(),
+                application.getNotes()
+        );
+    }
 }
