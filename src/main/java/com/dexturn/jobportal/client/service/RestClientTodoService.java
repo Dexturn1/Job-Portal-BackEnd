@@ -23,6 +23,9 @@ public class RestClientTodoService {
         this.requestScopedBean = requestScopedBean;
     }
 
+
+
+
     public List<TodoDto> findAll(){
         return restClient.get()
                 .uri(TODOS_API)
@@ -33,7 +36,7 @@ public class RestClientTodoService {
     }
 
 
-    public TodoDto findById(int id){
+    public TodoDto findById(long id){
 
         return restClient.get()
                 .uri(TODOS_API+"/{id}", id)
