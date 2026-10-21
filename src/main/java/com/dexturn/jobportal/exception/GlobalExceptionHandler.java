@@ -2,6 +2,9 @@ package com.dexturn.jobportal.exception;
 
 
 import com.dexturn.jobportal.dto.ErrorResponseDto;
+import io.micrometer.tracing.TraceContext;
+import io.micrometer.tracing.Tracer;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -19,16 +22,23 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @RestControllerAdvice
+@RequiredArgsConstructor
 public class GlobalExceptionHandler {
 
+    private final Tracer tracer;
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponseDto> handleException(Exception exception, WebRequest webRequest) {
 
+        TraceContext context=
+                tracer.currentTraceContext().context();
+        String traceId ="";
+        if (context != null){
+            traceId = context.traceId();
+        }
         ErrorResponseDto errorResponseDto = new ErrorResponseDto(
                 webRequest.getDescription(false), HttpStatus.INTERNAL_SERVER_ERROR,
-                exception.getMessage(), LocalDateTime.now());
-
+                exception.getMessage(), LocalDateTime.now(), traceId);
         return new ResponseEntity<>(errorResponseDto, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
@@ -36,7 +46,6 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Map<String, String>> handleException(MethodArgumentNotValidException exception) {
         Map<String, String> errors = new HashMap<>();
-
         List<FieldError> fieldErrorList = exception.getBindingResult().getFieldErrors(); // this will return the error list
 
         fieldErrorList.forEach(error -> errors.put(error.getField(), error.getDefaultMessage()));
@@ -45,15 +54,18 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(NullPointerException.class)
     public ResponseEntity<ErrorResponseDto> handleNullException(Exception exception, WebRequest webRequest) {
-
+        TraceContext context=
+                tracer.currentTraceContext().context();
+        String traceId ="";
+        if (context != null){
+            traceId = context.traceId();
+        }
         ErrorResponseDto errorResponseDto = new ErrorResponseDto(
                 webRequest.getDescription(false), HttpStatus.INTERNAL_SERVER_ERROR,
-                "A NullPointerException occurred due to:" + exception.getMessage(), LocalDateTime.now());
-
+                "A NullPointerException occurred due to:" + exception.getMessage(), LocalDateTime.now(), traceId);
         return new ResponseEntity<>(errorResponseDto, HttpStatus.INTERNAL_SERVER_ERROR);
     }
-
-
+    
     @ExceptionHandler(HandlerMethodValidationException.class)
     public ResponseEntity<Map<String, String>> handleException(HandlerMethodValidationException exception) {
         Map<String, String> errors = new HashMap<>();
@@ -71,19 +83,12 @@ public class GlobalExceptionHandler {
         return ResponseEntity.badRequest().body(errors);
     }
 
-
     @ExceptionHandler(RegistrationValidationException.class)
     public ResponseEntity<Map<String,String >> handleRegistrationException(RegistrationValidationException exception){
-
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(exception.getErrors());
-
     }
-
-
-
-
 }
 
 

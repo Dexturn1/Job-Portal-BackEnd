@@ -16,13 +16,12 @@ import java.util.List;
 @RequestMapping("/companies")
 @RequiredArgsConstructor
 public class CompanyController {
-
     private final CompanyService companyService;
-
 
     @GetMapping(path = "/public", version = "1.0")
     public ResponseEntity<List<CompanyDTO>> getAllCompanies() {
         List<CompanyDTO> companyList = companyService.getAllCompanies();
+
         return ResponseEntity.ok(companyList);
     }
 
@@ -40,14 +39,11 @@ public class CompanyController {
         }
     }
 
-
-
     @GetMapping(path = "/admin", version = "1.0")
     public ResponseEntity<List<CompanyDTO>> getAllCompaniesForAdmin(){
         List<CompanyDTO> companyDTOList =companyService.getAllCompaniesForAdmin();
         return ResponseEntity.ok().body(companyDTOList);
     }
-
 
     @PutMapping(path = "/{id}/admin", version = "1.0")
     public ResponseEntity<String> updateCompanyDetails(@PathVariable @NotBlank String id, @RequestBody @Valid CompanyDTO companyDTO){

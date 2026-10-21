@@ -9,11 +9,16 @@
 
         <encoder>
             <pattern>
-                %green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %cyan(%msg%n)
+                %green(%d{HH:mm:ss.SSS}) %blue(%-5level) %red([%thread]) %yellow(%logger{15}) - %magenta([traceId=%X{traceId} spanId=%X{spanId}]) - %cyan(%msg%n)
             </pattern>
         </encoder>
 
     </appender>
+
+
+    <appender name="OTEL" class="io.opentelemetry.instrumentation.logback.appender.v1_0.OpenTelemetryAppender">
+    </appender>
+
 
 
     <!-- Rolling File -->
@@ -52,6 +57,7 @@
         <!-- ===================== -->
         <root level="ERROR">
             <appender-ref ref="RollingFile"/>
+            <appender-ref ref="OTEL"/>
         </root>
         <!-- ===================== -->
         <!-- Application-specific ERROR logs -->
@@ -60,6 +66,8 @@
                 level="ERROR"
                 additivity="false">
             <appender-ref ref="RollingFile"/>
+            <appender-ref ref="OTEL"/>
+
         </logger>
     </springProfile>
 
@@ -74,20 +82,23 @@
         <!-- ===================== -->
         <root level="INFO">
             <appender-ref ref="RollingFile"/>
+            <appender-ref ref="OTEL"/>
+
         </root>
         <!-- ===================== -->
         <!-- Application-specific ERROR logs -->
-        <!-- ===================== -->
+        <!-- ===================== -->f
         <logger name="com.dexturn.jobportal"
                 level="INFO"
                 additivity="false">
             <appender-ref ref="RollingFile"/>
+            <appender-ref ref="OTEL"/>
+
         </logger>
     </springProfile>
     <!-- ===================== -->
     <!-- Development -->
     <!-- ===================== -->
-
 
     <springProfile name="default">
         <!-- ===================== -->
@@ -96,6 +107,8 @@
         <root level="INFO">
             <appender-ref ref="Console"/>
             <appender-ref ref="RollingFile"/>
+            <appender-ref ref="OTEL"/>
+
         </root>
         <!-- ===================== -->
         <!-- Application-specific ERROR logs -->
@@ -105,6 +118,7 @@
                 additivity="false">
             <appender-ref ref="Console"/>
             <appender-ref ref="RollingFile"/>
+            <appender-ref ref="OTEL"/>
         </logger>
     </springProfile>
 
