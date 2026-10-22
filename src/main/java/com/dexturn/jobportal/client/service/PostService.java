@@ -1,0 +1,32 @@
+package com.dexturn.jobportal.client.service;
+
+
+import com.dexturn.jobportal.dto.PostDto;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.service.annotation.*;
+
+import java.util.List;
+
+@HttpExchange(url = "https://jsonplaceholder.typicode.com/posts")
+public interface PostService {
+
+    @GetExchange
+    List<PostDto> findAll();
+
+    @GetExchange("/{id}")
+    PostDto findById(Long id);
+
+    @PostExchange
+    PostDto create(@RequestBody PostDto postDto);
+
+
+    @PutExchange("/{id}")
+    PostDto update(@PathVariable Long id, @RequestBody PostDto postDto);
+
+
+    @DeleteExchange
+    void delete(@PathVariable Long id);
+
+
+}

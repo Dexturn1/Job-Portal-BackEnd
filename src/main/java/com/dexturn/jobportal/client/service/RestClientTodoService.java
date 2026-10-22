@@ -1,7 +1,6 @@
 package com.dexturn.jobportal.client.service;
 
 import com.dexturn.jobportal.dto.TodoDto;
-import com.dexturn.jobportal.scopes.RequestScopedBean;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
@@ -11,20 +10,17 @@ import java.util.List;
 
 @Service
 public class RestClientTodoService {
+
     private final RestClient restClient;
     private static final String TODOS_API = "/todos";
-    private final RequestScopedBean requestScopedBean;
 
-    public RestClientTodoService(RestClient.Builder builder, RequestScopedBean requestScopedBean){
+    public RestClientTodoService(RestClient.Builder builder){
         this.restClient = builder.
                 baseUrl("https://jsonplaceholder.typicode.com")
                 .defaultHeader("Accept", "application/json")
                 .build();
-        this.requestScopedBean = requestScopedBean;
     }
-
-
-
+    
 
     public List<TodoDto> findAll(){
         return restClient.get()

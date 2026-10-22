@@ -20,7 +20,6 @@ import java.util.Set;
 @Entity
 @Table(name = "jobs")
 public class Job extends BaseEntity {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -130,4 +129,5 @@ public class Job extends BaseEntity {
 
     @OneToMany(mappedBy = "job")
     private Set<JobApplication> jobApplications = new LinkedHashSet<>();
+
 }

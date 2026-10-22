@@ -2,6 +2,7 @@ package com.dexturn.jobportal.client.controller;
 
 
 import com.dexturn.jobportal.client.service.RestClientTodoService;
+import com.dexturn.jobportal.client.service.TodoService;
 import com.dexturn.jobportal.dto.TodoDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -14,35 +15,44 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/todos")
 public class TodoController {
-    
     private final RestClientTodoService restClientTodoService;
 
+    private final TodoService todoService;
 
     @GetMapping()
     ResponseEntity<List<TodoDto>> findAll(){
-        return ResponseEntity.ok(restClientTodoService.findAll());
+//        return ResponseEntity.ok(restClientTodoService.findAll());
+      return  ResponseEntity.ok(todoService.findAll());
     }
 
     @GetMapping("/{id}")
     ResponseEntity<TodoDto> findById(@PathVariable Long id){
-      return ResponseEntity.ok(restClientTodoService.findById(id));
+//      return ResponseEntity.ok(restClientTodoService.findById(id));
+        return ResponseEntity.ok(todoService.findById(id));
+
     }
 
     @PostMapping
     ResponseEntity<TodoDto> create(@RequestBody TodoDto todoDto){
-        return ResponseEntity.status(HttpStatus.CREATED).body(restClientTodoService.create(todoDto));
+//        return ResponseEntity.status(HttpStatus.CREATED).body(restClientTodoService.create(todoDto));
+        return ResponseEntity.ok(todoService.create(todoDto));
     }
 
     @PutMapping("/{id}")
     ResponseEntity<TodoDto> update(@RequestBody TodoDto todoDto, @PathVariable Long id){
-        return ResponseEntity.status(HttpStatus.OK).body(restClientTodoService.update(id, todoDto));
+//        return ResponseEntity.status(HttpStatus.OK).body(restClientTodoService.update(id, todoDto));
+        return ResponseEntity.status(HttpStatus.OK).body(todoService.update(id,todoDto));
     }
 
 
     @DeleteMapping("/{id}")
     ResponseEntity<String> delete(@PathVariable Long id){
-        restClientTodoService.delete(id);
+//        restClientTodoService.delete(id);
+
+        todoService.delete(id);
         return ResponseEntity.ok("Todo deleted Successfully");
+
     }
+
 
 }
