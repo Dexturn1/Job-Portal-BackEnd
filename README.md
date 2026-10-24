@@ -244,6 +244,18 @@ A typical registration request:
 }
 ```
 
+## Demo / Registered Accounts
+
+The following account is currently known to be registered in the application:
+
+| Role | Email | Password | Notes |
+|------|-------|----------|-------|
+| Employer | `elon@gmail.com` | `jobPortal@2003` | Access to employer-only routes such as job creation, status updates, and application review |
+| Job Seeker | `john@gamail.com` | `jobPortal@2003` | Access to job seeker routes such as profile management, saved jobs, and applications |
+| Admin | `admin@gmail.com` | `jobPortal@2003` | Access to admin-only routes such as user and company management |
+
+> Add more demo/test credentials here as they are created for the project. For security reasons, avoid storing production or personal passwords in the repository unless they are explicitly intended for test/demo use.
+
 ## API Overview
 
 The application uses a global `/api` prefix via `WebConfig` and supports versioned endpoints (default version `1.0`).
@@ -288,6 +300,21 @@ The application uses a global `/api` prefix via `WebConfig` and supports version
 - `PATCH /api/contacts/{id}/status/admin`
 - `GET /api/users/search/admin`
 - `PATCH /api/users/{userId}/role/employer/admin`
+
+## Deployment and Live URL
+
+The backend is deployed in AWS Elastic Beanstalk and is available at:
+
+```text
+http://dex-jobportal.ap-south-1.elasticbeanstalk.com/
+```
+
+This base URL is used for live API access in production. For example, the API endpoints are typically called as:
+
+```text
+http://dex-jobportal.ap-south-1.elasticbeanstalk.com/api/auth/login/public
+http://dex-jobportal.ap-south-1.elasticbeanstalk.com/api/companies/public
+```
 
 ## Local Development Setup
 
