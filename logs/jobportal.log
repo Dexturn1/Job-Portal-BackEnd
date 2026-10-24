@@ -2484,3 +2484,529 @@ Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Da
 2026-10-24 07:09:45.253 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
 2026-10-24 07:09:45.253 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
 2026-10-24 07:09:45.253 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-10-24 07:54:25.408 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-10-24 07:54:25.606 INFO  [Thread-31] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-24 07:54:25.623 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:54:25.631 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-24 07:54:25.641 INFO  [Thread-31] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-24 07:54:25.641 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:54:25.643 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-24 07:54:25.648 INFO  [Thread-31] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:54:25.672 INFO  [Thread-31] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-10-24 07:54:25.749 INFO  [Thread-31] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:54:25.774 INFO  [Thread-31] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 07:54:25.809 INFO  [Thread-31] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-10-24 07:54:25.829 INFO  [Thread-31] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-10-24 07:54:26.550 INFO  [restartedMain] c.d.jobportal.JobportalApplication - Starting JobportalApplication using Java 27 with PID 57202 (/Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal/target/classes started by prabhatkapkoti in /Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal)
+2026-10-24 07:54:26.550 INFO  [restartedMain] c.d.jobportal.JobportalApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-24 07:54:26.553 INFO  [restartedMain] o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file /Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal/compose.yaml
+2026-10-24 07:54:26.886 INFO  [restartedMain] o.s.b.d.c.l.DockerComposeLifecycleManager - There are already Docker Compose services running, skipping startup
+2026-10-24 07:54:27.209 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-24 07:54:27.218 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 7 JPA repository interfaces.
+2026-10-24 07:54:27.639 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-24 07:54:27.643 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:54:27.643 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-24 07:54:27.643 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-24 07:54:27.672 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 786 ms
+2026-10-24 07:54:27.933 INFO  [restartedMain] i.m.c.i.push.PushMeterRegistry - Publishing metrics for OtlpMeterRegistry every 10s to http://127.0.0.1:4318/v1/metrics with resource attributes {service.name=jobportal}
+2026-10-24 07:54:28.203 INFO  [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-24 07:54:28.279 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-24 07:54:28.283 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-10-24 07:54:28.427 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21b0067d
+2026-10-24 07:54:28.427 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-10-24 07:54:28.429 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3307/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-24 07:54:28.798 INFO  [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-24 07:54:28.976 WARN  [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table jobs 
+       modify column benefits tinytext" via JDBC [Data truncation: Data too long for column 'benefits' at row 48]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table jobs 
+       modify column benefits tinytext" via JDBC [Data truncation: Data too long for column 'benefits' at row 48]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:324)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1455)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.dexturn.jobportal.JobportalApplication.main(JobportalApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'benefits' at row 48
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 41 common frames omitted
+2026-10-24 07:54:29.021 WARN  [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table jobs 
+       modify column description tinytext not null" via JDBC [Data truncation: Data too long for column 'description' at row 132]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table jobs 
+       modify column description tinytext not null" via JDBC [Data truncation: Data too long for column 'description' at row 132]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:324)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1455)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.dexturn.jobportal.JobportalApplication.main(JobportalApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 132
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 41 common frames omitted
+2026-10-24 07:54:29.081 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 07:54:29.676 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.publicPaths()
+2026-10-24 07:54:29.676 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.676 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.publicPaths()
+2026-10-24 07:54:29.676 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:29.695 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.securedPaths()
+2026-10-24 07:54:29.695 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.695 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.securedPaths()
+2026-10-24 07:54:29.695 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:29.697 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.adminPaths()
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.adminPaths()
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.employerPaths()
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.employerPaths()
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.jobseekerPaths()
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.jobseekerPaths()
+2026-10-24 07:54:29.698 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:29.704 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.compromisedPasswordChecker()
+2026-10-24 07:54:29.705 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.709 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.compromisedPasswordChecker()
+2026-10-24 07:54:29.709 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:5 ms
+2026-10-24 07:54:29.747 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.passwordEncoder()
+2026-10-24 07:54:29.748 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.748 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.passwordEncoder()
+2026-10-24 07:54:29.748 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:54:29.753 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.authenticationManager(..)
+2026-10-24 07:54:29.753 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[com.dexturn.jobportal.security.JobPortalNonProdUsernamePwdAuthenticationProvider@3c404248]
+2026-10-24 07:54:29.754 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.authenticationManager(..)
+2026-10-24 07:54:29.754 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:54:29.793 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:HttpServiceClientConfig.groupConfigurer()
+2026-10-24 07:54:29.794 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.794 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:HttpServiceClientConfig.groupConfigurer()
+2026-10-24 07:54:29.794 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:54:29.931 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:HttpServiceGroupConfigurer.configureGroups(..)
+2026-10-24 07:54:29.931 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.service.registry.HttpServiceProxyRegistryFactoryBean$DefaultGroups@3def71b5]
+2026-10-24 07:54:29.931 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:HttpServiceGroupConfigurer.configureGroups(..)
+2026-10-24 07:54:29.931 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:29.986 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CaffeineCacheConfig.caffeineCacheManager()
+2026-10-24 07:54:29.986 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:29.986 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CaffeineCacheConfig.caffeineCacheManager()
+2026-10-24 07:54:29.986 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.010 WARN  [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-24 07:54:30.019 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalNonProdUsernamePwdAuthenticationProvider
+2026-10-24 07:54:30.020 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configurePathMatch(..)
+2026-10-24 07:54:30.020 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.PathMatchConfigurer@405339a2]
+2026-10-24 07:54:30.020 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configurePathMatch(..)
+2026-10-24 07:54:30.020 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.036 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.customSecurityFilterChain(..)
+2026-10-24 07:54:30.037 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.security.config.annotation.web.builders.HttpSecurity@4732d986]
+2026-10-24 07:54:30.037 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.corsConfigurationSource()
+2026-10-24 07:54:30.037 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:30.037 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowedOrigins()
+2026-10-24 07:54:30.037 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:30.037 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowedOrigins()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowedMethods()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowedMethods()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowedHeaders()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowedHeaders()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowCredentials()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowCredentials()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getMaxAge()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getMaxAge()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.corsConfigurationSource()
+2026-10-24 07:54:30.038 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:54:30.046 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.customSecurityFilterChain(..)
+2026-10-24 07:54:30.046 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:10 ms
+2026-10-24 07:54:30.069 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configureApiVersioning(..)
+2026-10-24 07:54:30.069 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.ApiVersionConfigurer@24310df6]
+2026-10-24 07:54:30.070 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configureApiVersioning(..)
+2026-10-24 07:54:30.070 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:54:30.175 WARN  [restartedMain] i.m.c.i.b.cache.CaffeineCacheMetrics - The cache 'jobs' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-24 07:54:30.175 WARN  [restartedMain] i.m.c.i.b.cache.CaffeineCacheMetrics - The cache 'companies' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-24 07:54:30.175 WARN  [restartedMain] i.m.c.i.b.cache.CaffeineCacheMetrics - The cache 'roles' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-24 07:54:30.208 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:54:30.209 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-24 07:54:30.228 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2026-10-24 07:54:30.228 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:54:30.228 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-24 07:54:30.228 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-24 07:54:30.232 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 23 ms
+2026-10-24 07:54:30.235 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/jobportal/actuator'
+2026-10-24 07:54:30.237 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configureApiVersioning(..)
+2026-10-24 07:54:30.237 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.ApiVersionConfigurer@cf4707c]
+2026-10-24 07:54:30.237 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configureApiVersioning(..)
+2026-10-24 07:54:30.237 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.237 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configurePathMatch(..)
+2026-10-24 07:54:30.237 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.PathMatchConfigurer@4b9e628b]
+2026-10-24 07:54:30.237 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configurePathMatch(..)
+2026-10-24 07:54:30.238 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:54:30.243 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:54:30.244 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2026-10-24 07:54:30.246 INFO  [restartedMain] c.d.jobportal.JobportalApplication - Started JobportalApplication in 3.716 seconds (process running for 2784.566)
+2026-10-24 07:54:30.247 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-24 07:54:30.247 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-24 07:54:30.248 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-10-24 07:55:18.319 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-10-24 07:55:18.453 INFO  [Thread-44] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-24 07:55:18.464 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:55:18.469 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-24 07:55:18.481 INFO  [Thread-44] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-24 07:55:18.481 INFO  [tomcat-shutdown] o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:55:18.483 INFO  [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-10-24 07:55:18.485 INFO  [Thread-44] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:55:18.504 INFO  [Thread-44] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-10-24 07:55:18.539 INFO  [Thread-44] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:55:18.553 INFO  [Thread-44] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 07:55:18.567 INFO  [Thread-44] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-10-24 07:55:18.577 INFO  [Thread-44] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-10-24 07:55:18.773 INFO  [restartedMain] c.d.jobportal.JobportalApplication - Starting JobportalApplication using Java 27 with PID 57202 (/Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal/target/classes started by prabhatkapkoti in /Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal)
+2026-10-24 07:55:18.773 INFO  [restartedMain] c.d.jobportal.JobportalApplication - No active profile set, falling back to 1 default profile: "default"
+2026-10-24 07:55:18.775 INFO  [restartedMain] o.s.b.d.c.l.DockerComposeLifecycleManager - Using Docker Compose file /Users/prabhatkapkoti/UDAMY/Spring-boot/Current/jobportal/compose.yaml
+2026-10-24 07:55:19.088 INFO  [restartedMain] o.s.b.d.c.l.DockerComposeLifecycleManager - There are already Docker Compose services running, skipping startup
+2026-10-24 07:55:19.312 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-24 07:55:19.326 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 7 JPA repository interfaces.
+2026-10-24 07:55:19.407 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-10-24 07:55:19.407 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:55:19.408 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-24 07:55:19.408 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-24 07:55:19.413 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 324 ms
+2026-10-24 07:55:19.444 INFO  [restartedMain] i.m.c.i.push.PushMeterRegistry - Publishing metrics for OtlpMeterRegistry every 10s to http://127.0.0.1:4318/v1/metrics with resource attributes {service.name=jobportal}
+2026-10-24 07:55:19.496 INFO  [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-24 07:55:19.504 INFO  [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-24 07:55:19.504 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-10-24 07:55:19.534 INFO  [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8a8fd7
+2026-10-24 07:55:19.534 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-10-24 07:55:19.536 INFO  [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://127.0.0.1:3307/jobportal]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.5
+	Default catalog/schema: jobportal/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-24 07:55:19.603 INFO  [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-24 07:55:19.649 WARN  [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table jobs 
+       modify column benefits tinytext" via JDBC [Data truncation: Data too long for column 'benefits' at row 48]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table jobs 
+       modify column benefits tinytext" via JDBC [Data truncation: Data too long for column 'benefits' at row 48]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:324)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1455)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.dexturn.jobportal.JobportalApplication.main(JobportalApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'benefits' at row 48
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 41 common frames omitted
+2026-10-24 07:55:19.663 WARN  [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table jobs 
+       modify column description tinytext not null" via JDBC [Data truncation: Data too long for column 'description' at row 132]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table jobs 
+       modify column description tinytext not null" via JDBC [Data truncation: Data too long for column 'description' at row 132]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:91)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:566)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:506)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:324)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:220)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:269)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1455)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at com.dexturn.jobportal.JobportalApplication.main(JobportalApplication.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:583)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 132
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:96)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:839)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:687)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:86)
+	... 41 common frames omitted
+2026-10-24 07:55:19.678 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-24 07:55:19.760 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.publicPaths()
+2026-10-24 07:55:19.760 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.760 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.publicPaths()
+2026-10-24 07:55:19.760 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.771 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.securedPaths()
+2026-10-24 07:55:19.771 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.771 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.securedPaths()
+2026-10-24 07:55:19.771 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.776 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.adminPaths()
+2026-10-24 07:55:19.776 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.776 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.adminPaths()
+2026-10-24 07:55:19.776 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.employerPaths()
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.employerPaths()
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:PathsConfig.jobseekerPaths()
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:PathsConfig.jobseekerPaths()
+2026-10-24 07:55:19.777 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.782 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.compromisedPasswordChecker()
+2026-10-24 07:55:19.782 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.782 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.compromisedPasswordChecker()
+2026-10-24 07:55:19.782 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.801 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.passwordEncoder()
+2026-10-24 07:55:19.801 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.801 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.passwordEncoder()
+2026-10-24 07:55:19.801 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.803 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.authenticationManager(..)
+2026-10-24 07:55:19.804 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[com.dexturn.jobportal.security.JobPortalNonProdUsernamePwdAuthenticationProvider@54cb1ca5]
+2026-10-24 07:55:19.804 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.authenticationManager(..)
+2026-10-24 07:55:19.804 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:55:19.815 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:HttpServiceClientConfig.groupConfigurer()
+2026-10-24 07:55:19.815 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.815 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:HttpServiceClientConfig.groupConfigurer()
+2026-10-24 07:55:19.815 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.845 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:HttpServiceGroupConfigurer.configureGroups(..)
+2026-10-24 07:55:19.845 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.service.registry.HttpServiceProxyRegistryFactoryBean$DefaultGroups@29c73031]
+2026-10-24 07:55:19.846 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:HttpServiceGroupConfigurer.configureGroups(..)
+2026-10-24 07:55:19.846 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:55:19.916 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CaffeineCacheConfig.caffeineCacheManager()
+2026-10-24 07:55:19.916 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.916 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CaffeineCacheConfig.caffeineCacheManager()
+2026-10-24 07:55:19.916 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.934 WARN  [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-24 07:55:19.941 INFO  [restartedMain] o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name jobPortalNonProdUsernamePwdAuthenticationProvider
+2026-10-24 07:55:19.941 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configurePathMatch(..)
+2026-10-24 07:55:19.942 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.PathMatchConfigurer@4e6aecda]
+2026-10-24 07:55:19.942 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configurePathMatch(..)
+2026-10-24 07:55:19.942 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:1 ms
+2026-10-24 07:55:19.957 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.customSecurityFilterChain(..)
+2026-10-24 07:55:19.957 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.security.config.annotation.web.builders.HttpSecurity@da014d]
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:JobPortalSecurityConfig.corsConfigurationSource()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowedOrigins()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowedOrigins()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowedMethods()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowedMethods()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowedHeaders()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowedHeaders()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getAllowCredentials()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getAllowCredentials()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:CorsProperties.getMaxAge()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[]
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:CorsProperties.getMaxAge()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.corsConfigurationSource()
+2026-10-24 07:55:19.958 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:19.965 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:JobPortalSecurityConfig.customSecurityFilterChain(..)
+2026-10-24 07:55:19.965 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:8 ms
+2026-10-24 07:55:19.988 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configureApiVersioning(..)
+2026-10-24 07:55:19.988 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.ApiVersionConfigurer@22241a44]
+2026-10-24 07:55:19.988 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configureApiVersioning(..)
+2026-10-24 07:55:19.988 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:20.065 WARN  [restartedMain] i.m.c.i.b.cache.CaffeineCacheMetrics - The cache 'jobs' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-24 07:55:20.065 WARN  [restartedMain] i.m.c.i.b.cache.CaffeineCacheMetrics - The cache 'companies' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-24 07:55:20.065 WARN  [restartedMain] i.m.c.i.b.cache.CaffeineCacheMetrics - The cache 'roles' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-10-24 07:55:20.090 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-10-24 07:55:20.091 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-10-24 07:55:20.104 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 9090 (http)
+2026-10-24 07:55:20.104 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:55:20.105 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-10-24 07:55:20.105 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-24 07:55:20.109 INFO  [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 18 ms
+2026-10-24 07:55:20.111 INFO  [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 15 endpoints beneath base path '/jobportal/actuator'
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configureApiVersioning(..)
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.ApiVersionConfigurer@623b78db]
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configureApiVersioning(..)
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Entering method:WebConfig.configurePathMatch(..)
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ➡️Arguments:[org.springframework.web.servlet.config.annotation.PathMatchConfigurer@3d64bcd3]
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ✅Method executed successfully:WebConfig.configurePathMatch(..)
+2026-10-24 07:55:20.114 INFO  [restartedMain] c.d.j.a.LoggingAndPerformanceAspect - ⏱️Execution time:0 ms
+2026-10-24 07:55:20.120 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2026-10-24 07:55:20.120 INFO  [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 9090 (http) with context path '/'
+2026-10-24 07:55:20.122 INFO  [restartedMain] c.d.jobportal.JobportalApplication - Started JobportalApplication in 1.363 seconds (process running for 2834.442)
+2026-10-24 07:55:20.123 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-24 07:55:20.123 WARN  [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-24 07:55:20.123 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
