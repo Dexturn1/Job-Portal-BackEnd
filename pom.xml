@@ -203,6 +203,8 @@
 	</dependencies>
 
 	<build>
+		<finalName>jobportal-aws-deployment</finalName>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

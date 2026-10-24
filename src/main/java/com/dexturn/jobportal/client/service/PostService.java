@@ -15,7 +15,7 @@ public interface PostService {
     List<PostDto> findAll();
 
     @GetExchange("/{id}")
-    PostDto findById(Long id);
+    PostDto findById(@PathVariable Long id);
 
     @PostExchange
     PostDto create(@RequestBody PostDto postDto);
@@ -25,7 +25,7 @@ public interface PostService {
     PostDto update(@PathVariable Long id, @RequestBody PostDto postDto);
 
 
-    @DeleteExchange
+    @DeleteExchange("/{id}")
     void delete(@PathVariable Long id);
 
 
