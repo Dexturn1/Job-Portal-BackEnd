@@ -15,7 +15,6 @@ import java.util.Arrays;
 public class LoggingAndPerformanceAspect {
 
 
-
     // This tells Spring to - Execute this Around Advice when the intercepted method has the specified @LogAspect annotation
 //    @Around("@annotation(com.dexturn.jobportal.aspects.LogAspect)")
 

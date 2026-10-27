@@ -17,6 +17,7 @@ public class AuditorAwareImpl implements AuditorAware<String> {
 
     @Override
     public Optional<String> getCurrentAuditor() {
+
         String auditor = ApplicationUtility.getLoggedInUser();
 
         System.out.println("Auditor returned: " + auditor);
